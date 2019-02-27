@@ -56,7 +56,7 @@ The following React Native versions have been tested:
 
 | iOS    | Android |
 | ------ | ------- |
-| <=0.56 | <=0.56  |
+| <=0.58 | <=0.56  |
 
 Future versions are most likely supported, but have not been tested yet. Please open issues if you find specific issues with newer React Native versions.
 
@@ -80,7 +80,7 @@ We believe that the only way to address the core difficulties with mobile end-to
 
 ## Contributing to Detox
 
-Open source from the first commit. If you're interested in helping out with our roadmap, please see issues tagged marked with the [![ ](https://placehold.it/15/c4532d/000000?text=+) looking for contributors](https://github.com/wix/detox/labels/user%3A%20looking%20for%20contributors) label. If you have encoutnered a bug or would like to suggest a new feature, please open an issue.
+Open source from the first commit. If you're interested in helping out with our roadmap, please see issues tagged marked with the [![ ](https://placehold.it/15/c4532d/000000?text=+) looking for contributors](https://github.com/wix/detox/labels/user%3A%20looking%20for%20contributors) label. If you have encountered a bug or would like to suggest a new feature, please open an issue.
 
 Dive into Detox core by reading the [Detox Contribution Guide](/docs/Guide.Contributing.md).
 

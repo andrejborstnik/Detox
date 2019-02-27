@@ -3,6 +3,8 @@ id: Introduction.GettingStarted
 title: Getting Started
 ---
 
+**This guide is focused on iOS. For installing Detox for Android, be sure to also go over the [Android guide](Introduction.Android.md)**.
+
 This is a step-by-step guide for adding Detox to your React Native project.
 
 > TIP: You can also check out this [awesome tutorial](https://medium.com/@bogomolnyelad/how-to-test-your-react-native-app-like-a-real-user-ecfc72e9b6bc) on Medium with video by [@bogomolnyelad](https://medium.com/@bogomolnyelad)
@@ -42,7 +44,7 @@ Node is the JavaScript runtime Detox will run on. **Install Node 8.3.0 or above*
 
 #### 3. Install [applesimutils](https://github.com/wix/AppleSimulatorUtils)
 
-A collection of utils for Apple simulators, Detox uses it communicate with the simulator.
+A collection of utils for Apple simulators, Detox uses it to communicate with the simulator.
 
 ```sh
 brew tap wix/brew
@@ -64,13 +66,13 @@ This package makes it easier to operate Detox from the command line. `detox-cli`
 
 #### 1. Install detox
 
-If you have a React Native project, go to its root folder (where `package.json` is found) and type the following command.
+If you have a React Native project, go to its root folder (where `package.json` is found) and type the following command:
 
 ```sh
 npm install detox --save-dev
 ```
 
-If you have a project without Node integration (such as a native project), add the following package.json file to the root folder of you project:
+If you have a project without Node integration (such as a native project), add the following package.json file to the root folder of your project:
 
 ```json
 {

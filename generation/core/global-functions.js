@@ -48,6 +48,18 @@ function sanitize_greyDirection(action) {
   }
 } // END sanitize_greyDirection
 
+function sanitize_greyPinchDirection(action) {
+  switch (action) {
+    case 'outward':
+      return 1;
+    case 'inward':
+      return 2;
+
+    default:
+      throw new Error(`GREYAction.GREYPinchDirection must be a 'outward'/'inward', got ${action}`);
+  }
+} // END sanitize_greyPinchDirection
+
 function sanitize_greyContentEdge(action) {
   switch (action) {
     case 'left':
@@ -127,6 +139,10 @@ function sanitize_uiAccessibilityTraits(value) {
 } // END sanitize_uiAccessibilityTraits
 
 function sanitize_matcher(matcher) {
+  if (!matcher._call) {
+    return matcher;
+  }
+
   const originalMatcher = typeof matcher._call === 'function' ? matcher._call() : matcher._call;
   return originalMatcher.type ? originalMatcher.value : originalMatcher;
 } // END sanitize_matcher
@@ -149,10 +165,12 @@ function sanitize_uiDeviceOrientation(value) {
 
 module.exports = {
   sanitize_greyDirection,
+  sanitize_greyPinchDirection,
   sanitize_greyContentEdge,
   sanitize_uiAccessibilityTraits,
   sanitize_android_direction,
   sanitize_android_edge,
   sanitize_matcher,
-  sanitize_greyElementInteraction
+  sanitize_greyElementInteraction,
+  sanitize_uiDeviceOrientation
 };
